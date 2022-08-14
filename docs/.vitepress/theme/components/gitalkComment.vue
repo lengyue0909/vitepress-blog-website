@@ -16,7 +16,7 @@ function initializeGitalk() {
     owner: 'lengyue0909',
     admin: ['lengyue0909'],
     id: location.pathname,
-    proxy: 'https://cloudflare-cors-anywhere.lengyuefe.workers.dev/https://github.com/login/oauth/access_token',
+    proxy: 'https://cors-server-ecru.vercel.app/github_access_token',
     distractionFreeMode: false
   })
   gitalk.render(gitalkContainerId);
@@ -49,10 +49,19 @@ watch(() => route.path, () => {
   .gt-btn {
     border-color: var(--vp-button-brand-bg);
     background-color: var(--vp-button-brand-bg);
+
+    &-preview {
+      color: var(--vp-c-brand);
+      background-color: #fff;
+    }
   }
 
   a {
     color: var(--vp-c-brand);
+  }
+
+  svg {
+    fill: var(--vp-c-brand);
   }
 
   .gt-no-init {
