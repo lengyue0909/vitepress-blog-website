@@ -16,7 +16,7 @@ function initializeGitalk() {
     owner: 'lengyue0909',
     admin: ['lengyue0909'],
     id: location.pathname,
-    proxy: 'https://cloudflare-cors-anywhere.lengyuefe.workers.dev/?https://github.com/login/oauth/access_token',
+    proxy: 'https://cloudflare-cors-anywhere.lengyuefe.workers.dev/https://github.com/login/oauth/access_token',
     distractionFreeMode: false
   })
   gitalk.render(gitalkContainerId);
