@@ -64,6 +64,13 @@ watch(() => route.path, () => {
     fill: var(--vp-c-brand);
   }
 
+  .gt-ico-github {
+    
+    svg {
+      fill: inherit;
+    }
+  }
+
   .gt-no-init {
 
     p {
